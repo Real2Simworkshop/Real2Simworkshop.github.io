@@ -350,7 +350,8 @@ background-color: #FFFFFF;}
 text-align:center;
 }
 .hero-caption p{
-color: #000;
+
+color: #000;
 }
  .fa-angle-down {
     position: absolute;
@@ -1021,3 +1022,27 @@ height: 100%;
 background: #CCCCCC none repeat scroll 0% 0% / cover;
 transform: skewY(3deg);
 z-index: -1;}
+
+
+/* New styles.css for image */
+.center-cropped {
+  width: 300px;         /* Set your desired width */
+  height: 300px;        /* Set your desired height */
+  object-fit: cover;    /* Ensures the image covers the container, cropping as needed */
+  object-position: center; /* Center the image within the container */
+  display: block;       /* Optional: ensures the image is rendered as block-level */
+}
+
+.center-cropped-small {
+  width: 300px;         /* Set your desired width */
+  height: 300px;        /* Set your desired height */
+  object-fit: cover;    /* Ensures the image covers the container, cropping as needed */
+  object-position: center; /* Center the image within the container */
+  /*display: block;       !* Optional: ensures the image is rendered as block-level *!*/
+}
+
+.org-row {
+  display: flex;
+  justify-content: center; /* Centers the child elements horizontally */
+  flex-wrap: wrap;         /* Optional: allows items to wrap on smaller screens */
+}
