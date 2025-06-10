@@ -1046,3 +1046,31 @@ z-index: -1;}
   justify-content: center; /* Centers the child elements horizontally */
   flex-wrap: wrap;         /* Optional: allows items to wrap on smaller screens */
 }
+
+.oral-speakers {
+    text-align: center;
+}
+
+.oral-speakers .isotope-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* --- CSS fix for centering the Oral Speakers --- */
+
+.speaker-wrapper {
+    margin: 0 auto; /* This centers the wrapper div */
+}
+
+/* This rule applies only to screens 992px wide and larger (desktops) */
+@media (min-width: 992px) {
+    .speaker-wrapper {
+        width: 100%; /* Sets the wrapper to be exactly wide enough for 3 speakers */
+	    justify-content: center; /* Centers the child elements horizontally */
+		flex-wrap: wrap;
+	}
+	.speaker-wrapper .isotope-item {
+		width: 25%; /* Adjusts the width of each speaker item to fit 3 in a row */
+		margin: 0 4.0%; /* Adds some horizontal margin between items */
+	}
+}
